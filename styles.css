@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Asap, sans-serif;
+}
+
+body {
+	background-color: rgb(43, 37, 63);
+}
+
+header {
+	background-color: rgb(240, 246, 252);
+	padding: 20px;
+}
+
+header > h1 {
+	color: rgb(43, 37, 63);
+	font-size: 50px;
+	text-align: center;
+}
+
+.score-board {
+	margin: 20px auto;
+	padding: 20px 10px;
+	border: 3px solid white;
+	border-radius: 6px;
+	width: 200px;
+	color: rgb(240, 246, 252);
+	font-size: 40px;
+	text-align: center;
+	position: relative;
+}
+
+.badge {
+	background-color: coral;
+	color: rgb(240, 246, 252);
+	font-size: 14px;
+	padding: 4px 10px;
+}
+
+#user-label {
+	position: absolute;
+	top: 25px;
+	left: -25px;
+}
+
+#comp-label {
+	position: absolute;
+	top: 25px;
+	right: -25px;
+}
+
+.result {
+	font-size: 40px;
+	color: rgb(240, 246, 252);
+}
+
+.result > p {
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.choices {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.choice {
+	display: inline-block;
+	border: 4px solid rgb(240, 246, 252);
+	border-radius: 50%;
+	padding: 10px;
+	margin: 0px 20px;
+	transition: all 0.3s ease;
+}
+
+.choice:hover {
+	cursor: pointer;
+	background-color: rgb(70, 59, 105);
+}
+
+#action-message {
+	text-align: center;
+	font-size: 25px;
+	color: rgb(240, 246, 252);
+	margin-top: 40px;
+	font-weight: bold;
+}
