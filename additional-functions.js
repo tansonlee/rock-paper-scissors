@@ -30,7 +30,6 @@ function changeBorderAndResult(userChoice, compChoice, winner) {
 			break;
 		case "comp":
 			result_p.innerHTML = `${userChoice.toUpperCase()} loses to ${compChoice.toUpperCase()} You lose... 🐟`;
-<<<<<<< HEAD
 			workingElement = document.getElementById(userChoice);
 			highlight(workingElement, "red-glow", interval);
 			break;
@@ -38,11 +37,6 @@ function changeBorderAndResult(userChoice, compChoice, winner) {
 			result_p.innerHTML = `You both picked ${userChoice.toUpperCase()}. It's a tie. 🐒`;
 			workingElement = document.getElementById(userChoice);
 			highlight(workingElement, "grey-glow", interval);
-=======
-			break;
-		case "tie":
-			result_p.innerHTML = `You both picked ${userChoice.toUpperCase()}. It's a tie. 🐒`;
->>>>>>> 19d17f5... added emojis to the result message
 			break;
 	}
 
