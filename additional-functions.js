@@ -99,6 +99,5 @@ function updateScoreBoard(winner) {
 
 function highlight(element, design, interval) {
 	element.classList.add(design);
-	console.log(design);
 	setInterval(() => element.classList.remove(design), interval);
 }
