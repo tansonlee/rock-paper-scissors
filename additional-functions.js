@@ -19,49 +19,61 @@ function whoWins(user, comp) {
 	}
 }
 
-function changeBorderAndResult(userChoice, winner) {
-	console.log(winner);
-	switch (userChoice) {
-		case "rock":
-			switch (winner) {
-				case "user":
-					result_div.innerHTML = "rock user";
-					break;
-				case "comp":
-					result_div.innerHTML = "rock comp";
-					break;
-				case "tie":
-					result_div.innerHTML = "tie";
-					break;
-			}
+function changeBorderAndResult(userChoice, compChoice, winner) {
+	switch (winner) {
+		case "user":
+			result_p.innerHTML = `${userChoice.toUpperCase()} beats ${compChoice.toUpperCase()}! You WIN!! 🤩`;
 			break;
-		case "paper":
-			switch (winner) {
-				case "user":
-					result_div.innerHTML = "paper user";
-					break;
-				case "comp":
-					result_div.innerHTML = "paper comp";
-					break;
-				case "tie":
-					result_div.innerHTML = "tie";
-					break;
-			}
+		case "comp":
+			result_p.innerHTML = `${userChoice.toUpperCase()} loses to ${compChoice.toUpperCase()} You lose...`;
 			break;
-		case "scissors":
-			switch (winner) {
-				case "user":
-					result_div.innerHTML = "scissor user";
-					break;
-				case "comp":
-					result_div.innerHTML = "scissor comp";
-					break;
-				case "tie":
-					result_div.innerHTML = "tie";
-					break;
-			}
+		case "tie":
+			result_p.innerHTML = `You both picked ${userChoice.toUpperCase()}. It's a tie.`;
 			break;
 	}
+
+	// IF YOU WANT TO ACCESS ALL CASES
+	// switch (userChoice) {
+	// 	case "rock":
+	// 		switch (winner) {
+	// 			case "user":
+	// 				result_p.innerHTML = "rock user";
+	// 				break;
+	// 			case "comp":
+	// 				result_p.innerHTML = "rock comp";
+	// 				break;
+	// 			case "tie":
+	// 				result_p.innerHTML = "tie";
+	// 				break;
+	// 		}
+	// 		break;
+	// 	case "paper":
+	// 		switch (winner) {
+	// 			case "user":
+	// 				result_p.innerHTML = "paper user";
+	// 				break;
+	// 			case "comp":
+	// 				result_p.innerHTML = "paper comp";
+	// 				break;
+	// 			case "tie":
+	// 				result_p.innerHTML = "tie";
+	// 				break;
+	// 		}
+	// 		break;
+	// 	case "scissors":
+	// 		switch (winner) {
+	// 			case "user":
+	// 				result_p.innerHTML = "scissor user";
+	// 				break;
+	// 			case "comp":
+	// 				result_p.innerHTML = "scissor comp";
+	// 				break;
+	// 			case "tie":
+	// 				result_p.innerHTML = "tie";
+	// 				break;
+	// 		}
+	// 		break;
+	// }
 }
 
 function updateScoreBoard(winner) {

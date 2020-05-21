@@ -6,9 +6,10 @@ const compScore_span = document.getElementById("comp-score");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
-const result_div = document.querySelector(".result");
+const result_p = document.querySelector(".result > p");
 
 function main() {
+	// listen for a click on each of the divs and execute the game
 	rock_div.addEventListener("click", () => game("rock"));
 	paper_div.addEventListener("click", () => game("paper"));
 	scissors_div.addEventListener("click", () => game("scissors"));
@@ -21,8 +22,8 @@ function game(userChoice) {
 	// check who wins
 	const winner = whoWins(userChoice, compChoice);
 
-	// change border colour and the result_div content
-	changeBorderAndResult(userChoice, winner);
+	// change border colour and the result_p content
+	changeBorderAndResult(userChoice, compChoice, winner);
 
 	// change the scoreboard
 	updateScoreBoard(winner);
