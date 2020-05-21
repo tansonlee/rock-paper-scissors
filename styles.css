@@ -91,3 +91,18 @@ header > h1 {
 	margin-top: 40px;
 	font-weight: bold;
 }
+
+.green-glow {
+	border-color: #39ff14;
+	box-shadow: 0px 0px 10px #59f83d;
+}
+
+.red-glow {
+	border-color: #ff073a;
+	box-shadow: 0px 0px 10px #fd2852;
+}
+
+.grey-glow {
+	border-color: #808080;
+	box-shadow: 0px 0px 10px #c0c0c0;
+}
