@@ -21,12 +21,11 @@ function game(userChoice) {
 	// check who wins
 	const winner = whoWins(userChoice, compChoice);
 
-	// change boarder colour
+	// change border colour and the result_div content
 	changeBorderAndResult(userChoice, winner);
 
-	// change the result_div content
-
 	// change the scoreboard
+	updateScoreBoard(winner);
 }
 
 main();

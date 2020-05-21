@@ -32,6 +32,7 @@ function changeBorderAndResult(userChoice, winner) {
 					break;
 				case "tie":
 					result_div.innerHTML = "tie";
+					break;
 			}
 			break;
 		case "paper":
@@ -44,6 +45,7 @@ function changeBorderAndResult(userChoice, winner) {
 					break;
 				case "tie":
 					result_div.innerHTML = "tie";
+					break;
 			}
 			break;
 		case "scissors":
@@ -56,7 +58,21 @@ function changeBorderAndResult(userChoice, winner) {
 					break;
 				case "tie":
 					result_div.innerHTML = "tie";
+					break;
 			}
+			break;
+	}
+}
+
+function updateScoreBoard(winner) {
+	switch (winner) {
+		case "user":
+			userScore++;
+			userScore_span.innerHTML = userScore;
+			break;
+		case "comp":
+			compScore++;
+			compScore_span.innerHTML = compScore;
 			break;
 	}
 }
