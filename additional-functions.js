@@ -25,10 +25,10 @@ function changeBorderAndResult(userChoice, compChoice, winner) {
 			result_p.innerHTML = `${userChoice.toUpperCase()} beats ${compChoice.toUpperCase()}! You WIN!! 🤩`;
 			break;
 		case "comp":
-			result_p.innerHTML = `${userChoice.toUpperCase()} loses to ${compChoice.toUpperCase()} You lose...`;
+			result_p.innerHTML = `${userChoice.toUpperCase()} loses to ${compChoice.toUpperCase()} You lose... 🐟`;
 			break;
 		case "tie":
-			result_p.innerHTML = `You both picked ${userChoice.toUpperCase()}. It's a tie.`;
+			result_p.innerHTML = `You both picked ${userChoice.toUpperCase()}. It's a tie. 🐒`;
 			break;
 	}
 
